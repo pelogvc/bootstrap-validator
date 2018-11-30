@@ -69,7 +69,7 @@
 
     this.$element.attr('novalidate', true) // disable automatic native validation
 
-    Validator.DEFAULTS   = typeof options == 'object' && options
+    Validator.DEFAULTS   = typeof options == 'object' && Object.assign(Validator.DEFAULTS, options)
   }
 
   Validator.VERSION = '0.11.9'
