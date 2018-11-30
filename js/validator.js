@@ -68,6 +68,8 @@
     }).trigger('focusout')
 
     this.$element.attr('novalidate', true) // disable automatic native validation
+
+    Validator.DEFAULTS   = typeof options == 'object' && options
   }
 
   Validator.VERSION = '0.11.9'
